@@ -1,0 +1,287 @@
+.modal-wrapper-register,
+.modal-wrapper-signin {
+    height: 100vh;
+    width: 100vw;
+    display: none;    
+    position: fixed;
+    z-index: 100;
+    top: 0;    
+    justify-content: center;
+    align-items: center;    
+    background-color: rgba(245, 245, 245, .7);
+}
+
+.modal {        
+    border-radius: 2%;
+    box-shadow: 0 0 6px #26a69a, 0 0 6px;    
+    background-color: #fff;
+    width: 400px;
+    min-width: 280px;
+    margin: 0 10px;              
+}
+
+.modal,
+.modal-content {       
+    position: relative;             
+}
+
+.modal-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.modal,
+.modal-content,
+.modal-sides-wrapper,
+.modal-left-side,
+.modal-right-side {
+    height: 540px;
+}
+
+.modal-sides-wrapper {
+    position: absolute;
+    left: 0;    
+    width: 200%;    
+    transition: all ease 1s;   
+}
+
+.modal-left-side,
+.modal-right-side {
+    width: 50%;    
+    float: left;    
+}
+
+/* -------------------- */
+/* Left side of modal */
+/* ------------------- */
+
+/* styles for modal's closing span */
+
+.modal-close {
+    position: absolute;
+    color: #26a69a;
+    border: 2px solid #26a69a;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;    
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    right: -10px;
+    top: -10px;
+    background-color: #fff;
+    transition: all ease 0.5s;    
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    background-color: #26a69a;
+    color: #fff;
+}
+
+/* styles for modal's form */
+
+.modal-form-items {
+    display: flex;   
+}
+
+.modal-form-items-confirm>div,
+.modal-form-items label,
+.modal-form-items p {    
+    color: #666;
+}
+
+.modal-form-items-inputs {
+    flex: 4;
+    padding: 20px;
+}
+
+.modal-form-items-inputs p {
+    margin: 10px 0;
+}
+
+.modal-form-items-radios {
+    flex: 2;
+    align-self: center;    
+}
+
+.modal-form-items-radios>div {
+    margin-bottom: 10px;
+}
+
+/* styles for modal's inputs with types: text, email, password, date */
+
+.modal-form-items-inputs input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #26a69a;
+    padding-bottom: 10px;    
+    font-size: 22px;
+    transition: all ease 1s;      
+}
+
+.modal-form-items-inputs input:focus {
+    outline: none;
+    border-color: #4b64f2;
+}
+
+/* styles for modal's inputs with type radio */
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]+label {
+    position: relative;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+input[type="radio"]+label::before {
+    content: "";
+    display: inline-block;    
+    border-radius: 50%;
+    border: 2px solid #666;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -24px;
+    top: -2px;
+}
+
+input[type="radio"]:checked+label::before {
+    background-color: #26a69a;
+    border-color: #26a69a;
+    box-shadow: 0 0 0 2px #fff inset;
+}
+
+/* styles for modal's confirm section */
+
+.modal-form-items-confirm>div,
+input[value="button"] {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.rules-in {
+    font-weight: 400;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* styles for input with type submit */
+
+input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #26a69a;
+    color: #fff;        
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4b64f2;
+}
+
+/* styles for checkbox-accept-rules */
+
+#modal-rules-accept {
+    display: none;
+}
+
+label[for="modal-rules-accept"] {   
+    height: 10px;
+    width: 30px;
+    position: relative;
+    display: inline-block;
+    background-color: #666;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+label[for="modal-rules-accept"]::before{
+    content: "";    
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: white;
+    border-radius: 50%;
+    left: 0px;
+    top: -3px;
+    box-shadow: 0 0 1px 1px #666;   
+    transition: 0.5s;
+}
+
+#modal-rules-accept:checked+label {
+    background-color: #26a69a;
+}
+
+#modal-rules-accept:checked+label::before {   
+    left: 16px;
+}
+  
+
+/* --------------------- */
+/* Right side of modal */
+/* -------------------- */
+
+.modal-right-side>div {
+    width: 85%;    
+    height: 480px;
+    overflow-y: auto;     
+    margin: 30px auto;   
+}
+
+.rules-out {
+    font-weight: 600;    
+}
+
+.rules-out:hover {
+    cursor: pointer;
+}
+
+.modal-right-side>div>p {
+    margin: 10px 0;
+    width: 100%;    
+}
+
+/* ------------------------- */
+/* styles for opening modal */
+/* ------------------------ */
+
+.show {    
+    display: flex;    
+}
+
+/* ------------------------- */
+/* Media Queries */
+/* ------------------------ */
+
+@media screen and (max-width: 352px) {      
+    
+    .modal-form-items-inputs input {
+        width: 96%;
+    }
+
+    .modal-form-items-radios {
+        flex: 4;
+        padding: 4px 0;
+    }
+
+    .modal-form-items-inputs {
+        flex: 8;
+        padding: 10px 0;
+        padding-left: 10px;
+    }
+
+    input[type="submit"] {
+        margin-left: 10px;
+    }
+}

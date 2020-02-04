@@ -1,0 +1,127 @@
+body {    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(38, 166, 154, 0.4);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    box-shadow: 0 1px 6px 1px #26a69a;    
+    z-index: 60;
+    top: 0;
+}
+
+button {    
+    border: none;
+    border-radius: 4px;
+    background-color: #26a69a;
+    color: #fff;    
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 10px;
+    margin: 20px 0;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #4b64f2;
+    transform: translateY(-2px);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+/* ------------------------------- */
+/* Styles for SignUp modal window */
+/* ----------------------------- */
+
+.modal-wrapper-signin input[type="email"],
+.modal-wrapper-signin input[type="password"] {
+    width: 60%;
+    border: none;
+    border-bottom: 2px solid #26a69a;
+    padding-bottom: 10px;    
+    font-size: 22px;
+    transition: all ease 1s;      
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-wrapper-signin input[type="email"]:focus,
+.modal-wrapper-signin input[type="password"]:focus {
+    outline: none;
+    border-color: #4b64f2;
+}
+
+.modal-wrapper-signin input[type="submit"] {
+    display: block;
+    margin-left : 20%;
+}
+
+.modal-wrapper-signin form {    
+    margin-top: 100px;
+}
+
+.modal-wrapper-signin p {
+    text-indent: 20%;
+    color: #666;
+}
+
+/* ------------------------ */
+/* Styles for user cabinet */
+/* ---------------------- */
+
+h4 {
+    text-align: center;
+    color: #26a69a;
+    margin: 0 10px;
+}
+
+.user-cabinet {
+    margin-top: 100px;
+}
+
+.user-cabinet form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.cabinet-header {
+    height: 84px;
+    line-height: 84px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* ------------------------- */
+/* Media Queries */
+/* ------------------------ */
+
+@media screen and (max-width: 440px) {
+    .user-cabinet form {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .user-cabinet form {
+        width: 100%;
+    }
+
+    .cabinet-header {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 336px) {    
+    .cabinet-header {
+        display: none;
+    }
+}

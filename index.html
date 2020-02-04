@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final work</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/chips.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="/"><img class="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+        <div>
+            <button class="modal-show" data-modal=".modal-wrapper-signin">Sign In</button>
+            <button class="modal-show" data-modal=".modal-wrapper-register">Sign Up</button>
+        </div>
+    </nav>
+    <section class="modal-wrapper modal-wrapper-register" data-modal=".modal-wrapper-register">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-sides-wrapper">
+
+                    <div class="modal-left-side">
+                        <form class="modal-form">
+                            <div class="modal-form-items">
+
+                                <div class="modal-form-items-inputs">
+                                    <p>Name</p>
+                                    <input type="text" name="name">
+                                    <p>Email</p>
+                                    <input type="email" name="email">
+                                    <p>Password</p>
+                                    <input type="password" name="pass">
+                                    <p>Birthday</p>
+                                    <input type="date" name="birthday">
+                                </div>
+
+                                <div class="modal-form-items-radios">
+                                    <div>
+                                        <input id="male" type="radio" name="sex" value="male" checked>
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div>
+                                        <input id="female" type="radio" name="sex" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div>
+                                        <input id="other" type="radio" name="sex" value="other">
+                                        <label for="other">Other</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-form-items-confirm">
+                                <div>
+                                    No
+                                    <input type="checkbox" id="modal-rules-accept" name="rules-agreement">
+                                    <label for="modal-rules-accept"></label>
+                                    Yes, I read and agree
+                                    <span class="rules-in">rules</span>
+                                </div>
+                                <input type="submit" value="Sign Up">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="modal-right-side">
+                        <div>
+                            <span class="rules-out">&#8592; back</span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quibusdam qui facere
+                                vitae
+                                facilis atque aliquid quo iste eos veritatis vel quidem fugit distinctio autem, hic
+                                velit
+                                neque
+                                minus laboriosam?
+                            </p>
+                            <span class="rules-out">&#8592; back</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="modal-close" data-modal=".modal-wrapper-register">
+                &#10006;
+            </span>
+        </div>
+    </section>
+
+    <section class="modal-wrapper modal-wrapper-signin" data-modal=".modal-wrapper-signin">
+        <div class="modal">
+            <div class="modal-content">
+                <form>
+                    <p>Email</p>
+                    <input type="email" name="email">
+                    <p>Password</p>
+                    <input type="password" name="pass">
+                    <input type="submit" value="Sign In">
+                </form>
+            </div>
+
+            <span class="modal-close" data-modal=".modal-wrapper-signin">
+                &#10006;
+            </span>
+        </div>
+    </section>
+
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/form_registration.js"></script>
+    <script src="js/form_login.js"></script>
+    <script src="js/chips.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>

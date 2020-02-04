@@ -1,0 +1,17 @@
+.message {    
+    background: rgb(252, 206, 4);
+    color: rgb(252, 4, 4);;
+    font-size: 12px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 8px;    
+}
+
+.message-field {    
+    position: absolute;
+    z-index: 120;
+    width: 140px;
+    right: 12px;
+    bottom: 0;   
+}
